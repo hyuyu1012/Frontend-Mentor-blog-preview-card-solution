@@ -1,0 +1,114 @@
+:root {
+  --color-yellow : hsl(47, 88%, 63%);
+  --color-white : hsl(0, 0%, 100%);
+  --color-text-primary : hsl(0, 0%, 7%);
+  --color-text-secondary : hsl(0, 0%, 42%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-yellow);
+  /* background-color: blue; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width : 21vw;
+  height : 60vh;
+  background-color: var(--color-white);
+  border: 1px solid black;
+  border-radius: 5%;
+
+  padding: 1rem;
+  box-shadow: 8px 7.5px 2px black;
+  
+}
+
+.thumbnail-box {
+  width: 100%;
+  margin: 0 auto;  
+}
+
+.thumbnail-box > img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--color-yellow);
+  
+  font-family: 'Figtree';
+  font-size : 0.75rem;
+  font-weight : 700;
+  color: var(--color-text-primary);
+
+  padding: 0.3rem 0.4375rem;
+  margin: 0.625rem 0rem;
+}
+
+.published {
+  margin-top: 0rem;
+  color: var(--color-text-primary);
+  font-family: 'Figtree';
+  font-size : 0.7rem;
+  font-weight : 600;
+
+}
+
+.card > h1 {
+  margin-top: 0rem;
+  color: var(--color-text-primary);
+  font-family: 'Figtree';
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.card > h1:hover{
+  color : var(--color-yellow)
+}
+
+.context {
+  color : var(--color-text-secondary);
+  font-family: 'Figtree';
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+
+.profile-img-box{
+  width: 1.6rem;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.profile-img-box > img{
+  width: 100%;
+
+}
+
+.profile > p {
+  font-family: 'Figtree';
+  font-size: 0.7rem;
+  font-weight : 900;
+
+}
